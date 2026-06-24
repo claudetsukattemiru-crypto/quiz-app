@@ -25,3 +25,7 @@ Exactly three files — by design, do not split `QUESTIONS` back out into a sepa
 3. **[style.css](style.css)** — styling, including the `.choice-btn.correct` / `.choice-btn.incorrect` answer-highlight classes and `.feedback.correct` / `.feedback.incorrect` text-feedback classes applied by `selectChoice()` in script.js.
 
 Flow: `startQuiz()` resets state and calls `renderQuestion()`, which rebuilds the `#choices` buttons for the current question and hides `#feedback`/`#next-btn`. `selectChoice()` locks in an answer (disables all choice buttons, applies correct/incorrect classes to the buttons, writes a 正解/不正解 message into `#feedback`, increments `score`) and reveals `#next-btn`. `nextQuestion()` advances `currentIndex` or calls `showResult()` once `QUESTIONS` is exhausted.
+
+## GitHubリポジトリ
+
+https://github.com/claudetsukattemiru-crypto/quiz-app
